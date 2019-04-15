@@ -1,0 +1,8 @@
+<!-- 最外层最大的盒子 -->
+<view class='max-box' style='height:{{windowHeight}}'>
+  <view wx:for="{{items}}" bindtap='selectEvent' data-xingzuoicon='{{item.xingzuoIcon}}' data-xingzuoname='{{item.xingzuoName}}'>
+    <image src='{{item.xingzuoIcon}}'></image>
+    <text class='xingzuo-name'>{{item.xingzuoName}}</text>
+    <text class='xingzuo-date'>{{item.xingzuoDate}}</text>
+  </view>
+</view>

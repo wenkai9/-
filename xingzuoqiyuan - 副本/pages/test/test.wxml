@@ -1,0 +1,3 @@
+<view class='test-box' style='height:{{windowHeight}}'>
+
+</view>

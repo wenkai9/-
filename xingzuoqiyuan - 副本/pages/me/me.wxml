@@ -1,0 +1,44 @@
+<view class='pipeiResult-box' style='height:{{windowHeight}}'>
+  <!-- ------------------------------顶部----------------- -->
+  <view class='top-box'>
+    <text class='tips'>我和好友的匹配度</text>
+    <!-- 头像box -->
+    <view class='head-box'>
+      <view class='shareer'>
+        <image src='{{avatarUrl}}'></image>
+        <text>{{nickName}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- ---------------排行榜 -------------------------->
+  <view class='section'>
+    <view class='rank-title'>
+      <image src='../../images/rankList.png'></image>
+    </view>
+      <!-- 匹配排行榜列表 -->
+    <scroll-view scroll-y="{{isScroll}}" class='rank-list' style="height:{{h}}">
+      <view class='tip-box' wx:if="{{tips}}" style="height:{{h}};line-height:{{h}}">{{tips}}</view>
+      <view class='rank-box' wx:else>
+        <view class='rank-bar' wx:for="{{retArr}}">
+          <view class="num {{index == 0 ? 'b0':index==1?'b1':index==2?'b2':''}}">{{index == 0 ? '':index==1?'':index==2?'':index+1}}</view>
+          <view class='head-icon'>
+            <image src='{{item.user.avatarUrl}}'></image>
+          </view>
+          <view class='name'>{{item.user.nickname}}</view>
+          <view class='value' style='float:right;'>{{item.suittable+'%'}}</view>
+        </view>
+
+      </view>
+    </scroll-view>
+     <button class='more-btn' bindtap='moreBtnEvent' wx:if="{{!isScroll}}">查看更多</button> 
+  </view>
+  <!------------------ 底部-------------------------- -->
+  <form bindsubmit="formSubmit" report-submit='true'>
+    <button formType="submit" class='wan'>{{wan}}</button>
+  </form>
+  <!-- <button class='wan' bindtap='wanBtnEvent'>{{wan}}</button> -->
+</view>
+<button open-type="contact" class='top-btn' session-from="1">更多好玩</button>
+
+
+ <!-- <button open-type="getUserInfo" bindtap='loginEvent'>同意授权登录</button>  -->

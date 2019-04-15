@@ -1,0 +1,99 @@
+/**************************最外层最大的盒子(用来设置页面背景)********************************/
+.share-box{
+  width: 100%;
+  height: 1216rpx;  
+  background:url("http://xingzuo.haixinggo.com/Public/img/bimg/shareBack.png") no-repeat left top;
+  background-size: 100% 100%; 
+}
+/**********顶部提示文字**************/
+.tips-box{
+  width: 100%;
+  height: 180rpx;
+   padding-top: 70rpx;
+}
+.tips-box>.title{
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+}
+.tips-box>.title-t{
+  display: block; 
+  text-align: center;
+  color: #dd1464;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+}
+/********星座图片**************/
+.xingzuo-icon{
+  display: block;
+  margin: 0 auto;
+  width: 262rpx;
+  height: 262rpx;
+  margin-top: 86rpx;    
+  /* margin-top: 70rpx;  */
+}
+/*******用户性别************/
+.user-box{
+  width: 100%;
+  margin-top: 86rpx;
+}
+.user-box>.gender-icon{
+  display: block;
+  margin: 0 47%;
+  width: 62rpx;
+  height: 67rpx;
+}
+.user-box>.gender{
+  display: block;
+  color: #fff;
+  text-align: center;  
+  font-size: 40rpx;
+  margin-top: 20rpx;
+}
+
+/*******底部按钮***********/
+.btn-box{
+  width: 80%;
+  padding: 0 10%;
+  margin-top: 88rpx;
+}
+.btn-box>.zhuanfa-btn,.btn-box>.yulan-btn{
+  width: 42%;
+  height: 83rpx;
+  line-height: 83rpx;
+  background-color: #52cff5 !important; 
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: bold;
+  border-radius: 88rpx;
+  /* padding-left: 66rpx; */
+}
+.btn-box>.zhuanfa-btn{
+  float: left;
+  /* background: url("http://xingzuo.haixinggo.com/Public/img/bimg/xinicon.png") no-repeat 24rpx center;
+  background-size: 48rpx 36rpx; */
+}
+.btn-box>.yulan-btn{
+  float: right;
+  /* background: url("http://xingzuo.haixinggo.com/Public/img/bimg/tuicon.png") no-repeat 34rpx center;
+  background-size: 35rpx 35rpx; */
+}
+  .getText{
+  clear: both;
+  color:yellow !important;
+  font-size: 34rpx;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 230rpx !important; */
+  border:none !important;
+  animation: sport 1.05s linear infinite;  
+  font-weight: bold;
+}  
+ /* .foot-img{
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}  */

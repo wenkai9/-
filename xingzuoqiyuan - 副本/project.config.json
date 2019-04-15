@@ -1,0 +1,81 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wx65b0d13c9c878577",
+	"projectname": "xingzuo",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "22",
+					"pathName": "pages/shareJoin/shareJoin",
+					"query": "scene=50",
+					"scene": "1036",
+					"referrerInfo": {
+						"appId": "wx65b0d13c9c878577"
+					}
+				},
+				{
+					"id": 1,
+					"name": "长按识别小程序二维码",
+					"pathName": "pages/shareJoin/shareJoin",
+					"query": "scene=29",
+					"scene": "1048"
+				},
+				{
+					"id": 2,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": "scene=784",
+					"scene": "1036",
+					"referrerInfo": {
+						"appId": "wx65b0d13c9c878577"
+					}
+				},
+				{
+					"id": -1,
+					"name": "share",
+					"pathName": "pages/share/share",
+					"query": "",
+					"scene": "1036",
+					"referrerInfo": {
+						"appId": "wx65b0d13c9c878577"
+					}
+				},
+				{
+					"id": -1,
+					"name": "jump",
+					"pathName": "pages/jump/jump",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,53 @@
+<view class='pipeiResult-box' style='height:{{windowHeight}}'>
+  <!-- ------------------------------顶部----------------- -->
+  <view class='top-box'>
+    <text class='tips'>我和好友的匹配度</text>
+    <!-- 头像box -->
+    <view class='head-box'>
+      <view class='shareer'>
+        <image src='{{avatarUrl_f}}'></image>
+        <text>{{nickname_f}}</text>
+      </view>
+      <view class='arrows-box'>
+        <image src='../../images/arrows.png'></image>
+      </view>
+      <view class='joiner'>
+        <image src='{{avatarUrl_j}}'></image>
+        <text>{{nickname_j}}</text>
+      </view>
+    </view>
+    <!-- 匹配结果 -->
+    <view class='pipei-resut'>
+      <text class='baifenbi'>{{suittable}}</text>
+      <text class='result-wenzi'>{{remark}}</text>
+    </view>
+  </view>
+  <!-- ---------------排行榜 -------------------------->
+  <view class='section'>
+    <view class='rank-title'>
+      <image src='../../images/rankList.png'></image>
+    </view>
+      <!-- 匹配排行榜列表 -->
+    <scroll-view scroll-y="{{isScroll}}" class='rank-list' style="height:{{h}}">
+      <view class='rank-box'>
+
+        <view class='rank-bar' wx:for="{{retArr}}">
+          <view class="num {{index == 0 ? 'b0':index==1?'b1':index==2?'b2':''}}">{{index == 0 ? '':index==1?'':index==2?'':index+1}}</view>
+          <view class='head-icon'>
+            <image src='{{item.user.avatarUrl}}'></image>
+          </view>
+          <view class='name'>{{item.user.nickname}}</view>
+          <view class='value' style='float:right;'>{{item.suittable+'%'}}</view>
+        </view>
+
+      </view>
+    </scroll-view>
+     <button class='more-btn' bindtap='moreBtnEvent' wx:if="{{!isScroll}}">查看更多</button> 
+  </view>
+  <!------------------ 底部-------------------------- -->
+  <form bindsubmit="formSubmit" report-submit='true'>
+    <button formType="submit" class='wan'>我也要玩</button>
+  </form>
+  <!-- <button class='wan' bindtap='wanBtnEvent'>我也要玩</button> -->
+</view>
+<button open-type="contact" class='top-btn' session-from="1">更多好玩</button>

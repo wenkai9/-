@@ -1,0 +1,21 @@
+<view class='share-box' style='height:{{windowHeight}}'>
+    <!-- 顶部小提示 -->
+    <view class='tips-box'>
+      <text class='title'>你想知道和谁的星座最匹配吗</text>
+      <!-- <text class='title-t'>选择自己的星座并邀请TA一起配对就知道了</text> -->
+    </view>
+    <!-- 星座图片 -->
+    <image src='{{xingzuoIcon}}' class='xingzuo-icon' bindtap='goBack'></image>
+    <!-- 用户信息 -->
+    <view class='user-box'>
+      <image src='{{gender==1?"../../images/manicon.png":"../../images/womanicon.png"}}' class='gender-icon'></image>
+      <text class='gender'>{{gender==1?"男":gender==2?"女":""}}</text>
+    </view>
+    <!-- 底部按钮 -->
+    <view class='btn-box'>
+      <button class='zhuanfa-btn' open-type="share" style='float:{{location}}'>转发群聊匹配</button>
+      <button class='yulan-btn' bindtap='yulanImageEvent' wx:if='{{status}}'>生成我的图片</button>
+    </view>
+        <button open-type="contact" class='getText' session-from="1" plain="true" style='margin-top:{{marginTop}}'>{{msg}}</button>    
+       <!-- <image src='{{nav_pictureurl}}' class='foot-img' style='height:{{nav_imgheight}}' bindtap='navEvent'></image>    -->
+</view>

@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/me/me",
+    "pages/selectXingzuo/selectXingzuo",
+    "pages/share/share",
+    "pages/shareJoin/shareJoin",
+    "pages/test/test",
+    "pages/pipeiResult/pipeiResult",
+    "pages/jump/jump"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#373a3f",
+    "navigationBarTitleText": "wechat",
+    "navigationBarTextStyle": "#fff"
+  }
+}

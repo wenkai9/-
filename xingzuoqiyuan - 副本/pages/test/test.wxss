@@ -1,0 +1,7 @@
+/**************************最外层最大的盒子(用来设置页面背景)********************************/
+.test-box{
+  width: 100%;
+  height: 1216rpx;  
+  background:url("http://xingzuo.haixinggo.com/Public/img/bimg/shareBack.png") no-repeat left top;
+  background-size: 100% 100%; 
+}

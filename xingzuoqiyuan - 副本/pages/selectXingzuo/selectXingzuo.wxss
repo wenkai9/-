@@ -1,0 +1,33 @@
+.max-box{
+  width: 100%;
+  height: 1160rpx;  
+  background:url("http://xingzuo.haixinggo.com/Public/img/bimg/selectXingzuoBack.png") no-repeat left top;
+  background-size: 100% 100%; 
+  /* padding-top: 56rpx; */
+}
+.max-box>view{
+  width: 23.33%;
+  float: left;
+  margin: 0 5%;
+  margin-top: 58rpx;
+}
+.max-box>view>image{
+  display: block;
+  margin: 0 auto;
+  width: 134rpx;
+  height: 134rpx;
+}
+.max-box>view>.xingzuo-name{
+  display: block;
+  color:#fff;
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 12rpx;
+}
+.max-box>view>.xingzuo-date{
+  display: block;
+  color:#fff;
+  text-align: center;
+  font-size: 26rpx;
+  margin-top: 3rpx;
+}
